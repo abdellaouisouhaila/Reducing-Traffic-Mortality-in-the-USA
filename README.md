@@ -2,8 +2,7 @@
 
 <img src="images/../Data/images/car-accident.jpg" >
 
-We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA. :car: :truck: :blue_car:
-
+We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA. :vertical_traffic_light: :car: :truck: :blue_car: 
 ### Datasets
 
 :file_folder: there are two datasets : **miles-driven.csv** , **road-accidents.csv**
@@ -77,7 +76,7 @@ now we can compute the Pearson correlation coefficient matrix to quantify correl
 
 ##  Perform PCA on standardized data
 
-One way to group the data is to use PCA (**Principal Component Analysis**)
+:bar_chart: One way to group the data is to use PCA (**Principal Component Analysis**)
 
 <img src="images/../Data/images/pca.png" >
 
@@ -121,9 +120,13 @@ We will create a ```scatter plot``` of the first principle components and explor
 
 ```Make a decision when there is no clear right choice```
 
+:small_red_triangle_down:
+
 <p>As we can see, there is no obvious correct choice regarding which cluster is the most important to focus on. Yet, we can still argue for a certain cluster and motivate this using our findings above. Which cluster do you think should be a focus for policy intervention and further investigation?</p>
 
 I choose that cluster_num = 'perc_fatl_alcohol'
+
+:copyright: **Souhaila Abdellaoui**
 
 
 
