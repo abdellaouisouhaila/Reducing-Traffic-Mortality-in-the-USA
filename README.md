@@ -81,20 +81,49 @@ One way to group the data is to use PCA (**Principal Component Analysis**)
 
 <img src="images/../Data/images/pca.png" >
 
- <p>PCA uses the absolute variance to calculate the overall variance explained for each principal component; The cumulative variance of the first two principal components is 0.7947</p>
- <p>So the proportion of the variation (79%) from all three features: speeding, alcohol influence, and first-time accidents.</p>
- 
- We will create a ```scatter plot``` of the first principle components and explore how the states cluster together in this visualization.
- <img src="images/../Data/images/scattr.png" >
+<p>PCA uses the absolute variance to calculate the overall variance explained for each principal component; The cumulative variance of the first two principal components is 0.7947</p>
+<p>So the proportion of the variation (79%) from all three features: speeding, alcohol influence, and first-time accidents.</p>
+
+We will create a ```scatter plot``` of the first principle components and explore how the states cluster together in this visualization.
+
+<img src="images/../Data/images/scattr.png" >
 
 
- ##  KMeans to visualize clusters in the PCA scatter plot
+##  KMeans to visualize clusters in the PCA scatter plot
 
 <p>Since there wasn't a clear elbow in the scater plot, let's see how the PCA scatter plot looks if we color the states according to the cluster to which they are assigned.</p>
 
 <p>Kmeans to visualize the clusters in the pca , in our analysis we will assign the states in 3 groups</p>
 
- <img src="images/../Data/images/kmeans.png" >
+<img src="images/../Data/images/kmeans.png" >
+
+##  Compute the number of accidents within each cluster
+
+<p>Since resources and time are limited, it is useful to start off with an intervention in one of the three groups first. Which group would this be? To determine this, we will include data on how many miles are driven in each state, because this will help us to compute the total number of fatal accidents in each state.</p>
+
+We will use **miles-driven.csv** 
+
+|    | state      |   million_miles_annually |
+|---:|:-----------|-------------------------:|
+|  0 | Alabama    |                    64914 |
+|  1 | Alaska     |                     4593 |
+|  2 | Arizona    |                    59575 |
+|  3 | Arkansas   |                    32953 |
+|  4 | California |                   320784 |
+
+<p>this is the result :</p>
+
+|   cluster |   count |    mean |      sum |
+|----------:|--------:|--------:|---------:|
+|         0 |      18 | 911.406 | 16405.3  |
+|         1 |      11 | 860.506 |  9465.57 |
+|         2 |      22 | 898.379 | 19764.3  |
+
+```Make a decision when there is no clear right choice```
+
+<p>As we can see, there is no obvious correct choice regarding which cluster is the most important to focus on. Yet, we can still argue for a certain cluster and motivate this using our findings above. Which cluster do you think should be a focus for policy intervention and further investigation?</p>
+
+I choose that cluster_num = 'perc_fatl_alcohol'
 
 
 
