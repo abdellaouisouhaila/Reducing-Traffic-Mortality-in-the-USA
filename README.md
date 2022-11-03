@@ -1,5 +1,8 @@
 # Reducing-Traffic-Mortality-in-the-USA
-:smiley:
+
+<p><img src="https://assets.datacamp.com/production/project_462/img/car-accident.jpg" alt></p>
+
+
 
 |    | state      |   drvr_fatl_col_bmiles |   perc_fatl_speed |   perc_fatl_alcohol |   perc_fatl_1st_time |
 |---:|:-----------|-----------------------:|------------------:|--------------------:|---------------------:|
