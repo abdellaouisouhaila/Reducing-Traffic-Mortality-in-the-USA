@@ -1,6 +1,6 @@
 # Reducing-Traffic-Mortality-in-the-USA
 
-<img src="https://assets.datacamp.com/production/project_462/img/car-accident.jpg" alt>
+<img src=car-accident.jpg alt>
 
 
 
