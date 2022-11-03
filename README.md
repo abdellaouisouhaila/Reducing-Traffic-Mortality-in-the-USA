@@ -13,9 +13,11 @@ there are two datasets : **miles-driven.csv** , **road-accidents.csv**
 > - Install the pandas library using command pip install pandas.
 > - Install the numpy library using command pip install numpy.
 
-import **pandas** as pd
+``import **pandas** as pd
+
 import **numpy** as np
-import ```matplotlib.pyplot``` as plt
+
+import ```matplotlib.pyplot``` as plt``
 
 
 
