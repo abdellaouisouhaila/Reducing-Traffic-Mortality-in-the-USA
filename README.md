@@ -2,7 +2,7 @@
 
 <img src="images/../Data/images/car-accident.jpg" >
 
-We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA. :vertical_traffic_light: :car: :truck: :blue_car: 
+We analyze data collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners to wrangle, plot, dimensionally reduce and cluster data to make an attempt to find patterns and help reduce Traffic Mortality in USA. :vertical_traffic_light: :car: :truck: :blue_car: :ambulance: :truck: 
 ### Datasets
 
 :file_folder: there are two datasets : **miles-driven.csv** , **road-accidents.csv**
