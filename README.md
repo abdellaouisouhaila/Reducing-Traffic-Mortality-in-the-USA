@@ -19,6 +19,9 @@ import numpy as np
 
 import matplotlib.pyplot as plt```
 
+Our dataset **road-accidents.csv** show this :
+
+
 
 
 |    | state      |   drvr_fatl_col_bmiles |   perc_fatl_speed |   perc_fatl_alcohol |   perc_fatl_1st_time |
