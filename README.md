@@ -83,6 +83,7 @@ One way to group the data is to use PCA (**Principal Component Analysis**)
 
  <p>PCA uses the absolute variance to calculate the overall variance explained for each principal component; The cumulative variance of the first two principal components is 0.7947</p>
  <p>So the proportion of the variation (79%) from all three features: speeding, alcohol influence, and first-time accidents.</p>
+ 
  We will create a ```scatter plot``` of the first principle components and explore how the states cluster together in this visualization.
  <img src="images/../Data/images/scattr.png" >
 
