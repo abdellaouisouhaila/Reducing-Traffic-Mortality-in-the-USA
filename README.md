@@ -43,7 +43,7 @@ The columns are:
 * perc_fatl_1st_time = Percentage Of Drivers Involved In Fatal Collisions Who Had Not Been Involved In Any Previous Accidents (2011).
   
 
-Ensuite, on utilise ````.describe``` to return the description of the data and to view some basic statistical details like percentile, mean, std etc. we observe this:
+Ensuite, on utilise ```.describe``` to return the description of the data and to view some basic statistical details like percentile, mean, std etc. we observe this:
 
 |       |   drvr_fatl_col_bmiles |   perc_fatl_speed |   perc_fatl_alcohol |   perc_fatl_1st_time |
 |:------|-----------------------:|------------------:|--------------------:|---------------------:|
@@ -60,4 +60,44 @@ The graphical overview is good to get a sense for the distribution of variables 
 The result is like this :
 
 <img src="images/../Data/images/téléchargement.png" >
+
+## Quantify the association of features and accidents 
+We can already see some potentially interesting relationships between the target variable (the number of fatal accidents) and the feature variables (the remaining three columns).
+now we can compute the Pearson correlation coefficient matrix to quantify correlation between variables. This is the output :
+
+|                      |   drvr_fatl_col_bmiles |   perc_fatl_speed |   perc_fatl_alcohol |   perc_fatl_1st_time |
+|:---------------------|-----------------------:|------------------:|--------------------:|---------------------:|
+| drvr_fatl_col_bmiles |              1         |        -0.0290801 |            0.199426 |           -0.0179419 |
+| perc_fatl_speed      |             -0.0290801 |         1         |            0.286244 |            0.0140662 |
+| perc_fatl_alcohol    |              0.199426  |         0.286244  |            1        |           -0.245455  |
+| perc_fatl_1st_time   |             -0.0179419 |         0.0140662 |           -0.245455 |            1         |
+
+<p>the correlation table shows that the number of fatal accidents is most strongly correlated with alcohol consumption.</p>
+<p>We have learned that alcohol consumption is weakly associated with the number of fatal accidents across states. This could lead us to conclude that alcohol consumption should be a focus for further investigations and maybe strategies should divide states into high versus low alcohol consumption in accidents.</p>
+
+##  Perform PCA on standardized data
+
+One way to group the data is to use PCA (**Principal Component Analysis**)
+
+<img src="images/../Data/images/pca.png" >
+
+ <p>PCA uses the absolute variance to calculate the overall variance explained for each principal component; The cumulative variance of the first two principal components is 0.7947</p>
+ <p>So the proportion of the variation (79%) from all three features: speeding, alcohol influence, and first-time accidents.</p>
+ <p>We will create a ```scatter plot``` of the first principle components and explore how the states cluster together in this visualization.</p>
+ <img src="images/../Data/images/scattr.png" >
+
+
+ ##  KMeans to visualize clusters in the PCA scatter plot
+
+<p>Since there wasn't a clear elbow in the scree plot, let's see how the PCA scatter plot looks if we color the states according to the cluster to which they are assigned.</p>
+
+<p>Kmeans to visualize the clusters in the pca , in our analysis we will assign the states in 3 groups</p>
+
+ <img src="images/../Data/images/kmeans.png" >
+
+ 
+
+
+
+
 
