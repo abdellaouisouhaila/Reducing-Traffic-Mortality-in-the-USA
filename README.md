@@ -1,6 +1,6 @@
 # Reducing-Traffic-Mortality-in-the-USA
 
-<img src="images/car-accident.jpg" >
+<img src="images/../Data/images/car-accident.jpg" >
 
 
 
